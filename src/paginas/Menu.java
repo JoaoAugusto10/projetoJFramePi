@@ -1,22 +1,19 @@
 package paginas;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
 
-public class CriarEnquete extends JFrame implements ActionListener {
-    JLabel titulo, descricao, opcResposta,frase;
-    JTextField txtTitulo, txtDescricao, txtOpcResposta,txtOpcResposta2;
-    JButton btnOpcao, btnCria;
+public class Menu extends JFrame implements ActionListener {
+    JButton btn1, btn2, btn3, btn4, btn5, btn6;
     JLabel imagemLabel; // Declaração do JLabel para a imagem
 
-    public CriarEnquete() {
-        setTitle("Cadastro"); // Titulo da janela
-        setSize(1000, 700); // tamanho da janela
-        setLayout(null); // anula o layout padrão
-        int alt = 40;
-        getContentPane().setBackground(new Color(0xDBCDC2));
+    public Menu() {
+        setTitle("Menu"); // Titulo da janela
+        setSize(1000, 700); // Tamanho da janela
+        setLayout(null); // Anula o layout padrão
+        getContentPane().setBackground(new Color(0xDBCDC2)); // Cor de fundo
 
         // Painel
         RoundedPanel panel = new RoundedPanel(50); // 50 é o raio das bordas arredondadas
@@ -34,7 +31,7 @@ public class CriarEnquete extends JFrame implements ActionListener {
         frase2.setForeground(Color.BLACK); // Cor da fonte
         frase2.setFont(new Font("Arial", Font.BOLD, 24)); // Estilo da fonte
         add(frase2); // Adicionando o JLabel ao JFrame
-        
+
         // Carrega a imagem
         ImageIcon imagem = new ImageIcon(getClass().getResource("/Imagens/cropped_circle_image.png")); // Caminho para a imagem
         imagemLabel = new JLabel(imagem); // Cria um JLabel com a imagem
@@ -43,39 +40,21 @@ public class CriarEnquete extends JFrame implements ActionListener {
         // Adiciona o JLabel da imagem ao JFrame
         add(imagemLabel); 
 
+        // Criação de botões
+        btn1 = criarBotao("", '1', 30, 50, 250, 200);
+        btn2 = criarBotao("", '2', 325, 50, 250, 200);
+        btn3 = criarBotao("", '3', 620, 50, 250, 200);
+        btn4 = criarBotao("", '4', 30, 270, 250, 200);
+        btn5 = criarBotao("", '5', 325, 270, 250, 200);
+        btn6 = criarBotao("", '6', 620, 270, 250, 200);
 
-        // Cadastro
-        titulo = criarJLabel("Titulo", 30, 50, 270, alt);
-        titulo.setForeground(Color.BLACK);
-        txtTitulo  = criarTexto(30, 90, 840, alt);
-        descricao =  criarJLabel("Descrição", 30,130, 270, alt);
-        descricao.setForeground(Color.BLACK);
-        txtDescricao = criarTexto(30, 170, 840, 100);
-        opcResposta =  criarJLabel("Opções de Resposta", 30,280, 270, alt);
-        opcResposta.setForeground(Color.BLACK);
-        txtOpcResposta = criarTexto(30, 320, 840, alt);
-        txtOpcResposta2 = criarTexto(30, 380, 840, alt);
-        
-        
-        
-        int rodape = getHeight() - 80;
-        int distEsq = getWidth() / 2;
-        int larg = 150;
-
-        btnOpcao = criarBotao("Opções", 'O', 30, 440, 120, alt);
-        btnCria = criarBotao("Criar Enquete", 'C', 30, 490, 840, alt);
-
-        // Adiciona os componentes diretamente ao painel
-        panel.add(titulo);
-        panel.add(txtTitulo);
-        panel.add(descricao);
-        panel.add(txtDescricao);
-        panel.add(opcResposta);
-        panel.add(txtOpcResposta);
-        panel.add(txtOpcResposta2);
-        panel.add(btnOpcao);
-        panel.add(btnCria);
-        
+        // Adiciona os botões ao painel
+        panel.add(btn1);
+        panel.add(btn2);
+        panel.add(btn3);
+        panel.add(btn4);
+        panel.add(btn5);
+        panel.add(btn6);
 
         centralizar();
         setVisible(true); // Exibindo a janela
@@ -86,10 +65,9 @@ public class CriarEnquete extends JFrame implements ActionListener {
         JButton b1 = new JButton(string);
         b1.setBounds(distEsq, rodape, larg, altura); // Dist Esq, Dist Topo, larg, alt
         b1.setBackground(new Color(0x40BDF2)); 
-        b1.setForeground(Color.YELLOW);
+        b1.setForeground(Color.BLACK);
         b1.setFont(new Font("Helvetica", Font.BOLD, 18));
         b1.setToolTipText("Botão " + string);
-        b1.setForeground(Color.BLACK);
         b1.setHorizontalAlignment(0);
         b1.setVerticalAlignment(0);
         b1.setMnemonic(c); // Tecla de atalho
@@ -97,24 +75,8 @@ public class CriarEnquete extends JFrame implements ActionListener {
         return b1;
     }
 
-    private JTextField criarTexto(int desq, int dtopo, int larg, int alt) {
-        JTextField jt = new JTextField();
-        jt.setBounds(desq, dtopo, larg, alt);
-        jt.setForeground(Color.blue);
-        return jt;
-    }
-
-    private JLabel criarJLabel(String string, int desq, int dtopo, int larg, int alt) {
-        JLabel jl = new JLabel(string);
-        jl.setLocation(desq, dtopo); // Dist Esq e Topo
-        jl.setSize(larg, alt); // Largura e altura do rótulo
-        jl.setForeground(new Color(110, 182, 145)); // Cor da fonte
-        jl.setFont(new Font("Courier new", Font.BOLD, 18)); // Nome, estilo e tamanho da fonte
-        return jl;
-    }
-
     public static void main(String[] args) {
-        new CriarEnquete();
+        new Menu();
     }
 
     public void centralizar() {
@@ -128,7 +90,7 @@ public class CriarEnquete extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == btnCria)
+        if (e.getSource() == btn1)
             System.exit(0);
     }
 }
