@@ -1,4 +1,4 @@
-package paginas;
+package view;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.RoundRectangle2D;
