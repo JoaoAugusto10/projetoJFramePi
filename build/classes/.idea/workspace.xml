@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb97f011-5917-4acf-9359-7848d620eae1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/view/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/Teste.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/Imagens/cropped_circle_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/paginas/CriarEnquete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/paginas/Imagem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/paginas/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/paginas/RoundedPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Imagens/cropped_circle_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/cropped_circle_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paginas/CriarEnquete.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/CriarEnquete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paginas/Imagem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paginas/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paginas/RoundedPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/RoundedPanel.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2nl50TD3So3DKNRNJOK8hxHiNRD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/win/OneDrive/Desktop/projetoJFramePi/src"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb97f011-5917-4acf-9359-7848d620eae1" name="Changes" comment="" />
+      <created>1729534598523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729534598523</updated>
+    </task>
+    <servers />
+  </component>
+</project>
