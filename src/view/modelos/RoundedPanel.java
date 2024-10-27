@@ -1,9 +1,9 @@
-package view;
+package view.modelos;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.RoundRectangle2D;
 
-class RoundedPanel extends JPanel {
+public class RoundedPanel extends JPanel {
     private int radius;
 
     public RoundedPanel(int radius) {
