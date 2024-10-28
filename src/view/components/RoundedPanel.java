@@ -1,4 +1,5 @@
-package view.modelos;
+package view.components;
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.RoundRectangle2D;
