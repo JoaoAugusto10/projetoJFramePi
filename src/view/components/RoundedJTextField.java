@@ -1,4 +1,4 @@
-package view.modelos;
+package view.components;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;

@@ -3,7 +3,7 @@ package view;
 
 import javax.swing.*;
 
-import view.modelos.RoundedPanel;
+import view.components.*;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
