@@ -49,7 +49,7 @@ public class CriarEnquete extends JFrame implements ActionListener {
         scrollPanel.setBorder(BorderFactory.createEmptyBorder());
         scrollPanel.getViewport().setBackground(getContentPane().getBackground());
         scrollPanel.getVerticalScrollBar()
-                .setUI(new CustomScrollBarUI(panel.getBackground(), getContentPane().getBackground()));
+                .setUI(new CustomScrollBarUI(new Color(0x877D75), getContentPane().getBackground()));
 
         // JPanel panel = new RoundedPanel(50);// 50 é o raio das bordas arredondadas
         panel.setPreferredSize(new Dimension(panel.getWidth() - 20, panel.getHeight() - 80));
@@ -105,7 +105,14 @@ public class CriarEnquete extends JFrame implements ActionListener {
         JPanel panelOpcao5 = criarInput(txtOpcResposta5);
 
         btnCria = criarBotao("Criar Enquete", 'C', 30, 510, 830, alt, 15);
-
+        btnCria.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+        
+        
         botaoFechar = criarBotao("X", 'x', getWidth() - 50, 0, 50, alt, 25);
         botaoFechar.setBackground(getContentPane().getBackground());
         botaoFechar.setFont(new Font("Kantumruy Pro", Font.PLAIN, 20));
@@ -218,4 +225,8 @@ public class CriarEnquete extends JFrame implements ActionListener {
         return ((widthTela - width) / 2);
     }
 
+    	
+    public static void main(String[] args) {
+		new CriarEnquete();
+	}
 }

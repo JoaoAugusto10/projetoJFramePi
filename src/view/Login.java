@@ -119,7 +119,7 @@ public class Login extends JFrame {
            
             @Override
             public void actionPerformed(ActionEvent e) {
-                new CriarEnquete();
+                new Menu();
                 dispose();
             }
         });
@@ -290,6 +290,7 @@ public class Login extends JFrame {
 
         return ((widthTela - width) / 2);
     }
+    
 
     public static void main(String[] args) {
         new Login();
